@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/amazon-fonts@1.0.1/fonts/stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Amazon</title>
+  </head>
+  <body>
+    <!-- /////////////////////////////////////////// navbar /////////////////////////////// -->
+    <!-- /////////////// Navar main ////////////////// -->
+    <header class="navbar">
+        <!-- logo -->
+      <div class="logo boder">
+        <img src="./img/amazon_logo.png" alt="amazon_logo" />
+      </div>
+      <!-- location -->
+      <div class="location boder">
+        <p>Deliver to</p>
+        <div class="location-icon">
+            <i class="fa-solid fa-location-dot"></i>    
+            <p>Pakistan</p>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="nav-search-container">
+        <div class="nav-search-item-option">
+            <select>
+                <option value="All" selected disabled>All</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Kids</option>
+                <option>Electronics</option>
+                <option>Health & Beauty</option>
+        </select>
+        </div>
+        <div class="search-input" >
+            <input type="search" id="search-input" placeholder="Search Amazon">
+        </div>
+        <div class="search-icon">
+            <a href="#search-input"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+      <!-- Sign in -->
+      <div class="sign-in boder">
+        <p>Hello, <a href="#">Sign-in</a></p>
+        <div class="location-icon">
+            <select class="account-list">
+                <option value="" selected disabled>Account and list</option>
+                <option value="">Your Account</option>
+                <option value="">Order</option>
+                <option value="">Your List</option>
+                <option value="">New account-list</option>
+            </select>
+        </div>
+      </div>
+      <!-- return and orders -->
+      <div class="returns-and-orders boder">
+        <a href="#" class="returns">Returns</a>
+        <br>
+        <a href="#"> & Orders</a>
+      </div>
+      <!-- shopping Card -->
+      <div class="shopping boder">
+        <div class="shop-icon">
+            <i class='bx bxs-shopping-bags'></i>
+        </div>
+        <p>Cart</p>
+      </div>
+    </header>
+    <!-- /////////////// Navar main ////////////////// -->
+  </body>
+</html>

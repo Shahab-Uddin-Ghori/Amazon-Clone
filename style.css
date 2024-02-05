@@ -1,0 +1,175 @@
+/* /////////////// font family cdn ////////////  */
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember";
+  text-decoration: none;
+  outline: none;
+}
+:root {
+  --header--bg-color: #131921;
+  --heading--text-color: #131921;
+  --text-color: #fff;
+  --text2-colo: #878989;
+  --link-color: #3990a0;
+}
+/* /////////////////                             navbar                       ////////////////////// */
+.navbar {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--header--bg-color);
+  padding: .15rem 0;
+}
+
+.boder {
+  border: 1.5px solid transparent;
+  padding: 3px;
+}
+
+.boder:hover {
+  border: 1.5px solid var(--text-color);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 8rem;
+  height: 3.5rem;
+}
+.location {
+  width: 5.5rem;
+  text-align: center;
+}
+.location > p {
+  font-size: 0.8rem;
+  color: var(--text2-colo);
+}
+.location-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  gap: 0.3rem;
+}
+.nav-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  height: 3rem;
+}
+.nav-search-item-option select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+.nav-search-item-option select option {
+  color: var(--heading--text-color);
+  background-color: var(--text-color);
+}
+.nav-search-item-option select:first-child {
+  color: var(--text2-colo);
+  background-color: rgb(235, 235, 235);
+}
+.nav-search-item-option select:focus {
+  border: 3px solid #f3a847;
+  box-shadow: 0 0 0.2rem #f3a847;
+}
+
+.nav-search-item-option select:first-child {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.search-input input {
+  height: 3rem;
+  width: 45rem;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  border: none;
+}
+.search-input input:focus,
+.search-icon:focus-within {
+  border: 3px solid #f3a847;
+  box-shadow: 0 0 0.2rem #f3a847;
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 5rem;
+  background-color: #f3a847;
+  border-radius: 0 4px 4px 0;
+}
+.search-icon:hover{
+    cursor: pointer;
+}
+.search-icon > a > i {
+  color: var(--heading--text-color);
+  font-size: 1.2rem;
+}
+.sign-in {
+  height: 3rem;
+}
+.sign-in:hover{
+    cursor: pointer;
+}
+.sign-in > p,
+a {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-left: 6px;
+}
+.account-list {
+  border: none;
+  width: 9rem;
+  color: var(--text2-colo);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.account-list option {
+  color: #131921;
+}
+.account-list:first-child {
+  background-color: transparent;
+  color: var(--text-color);
+}
+.returns-and-orders{
+    height: 3rem;
+}
+.returns-and-orders > a {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.returns-and-orders .returns{
+    font-size: .8rem;
+    font-weight: 500;
+}
+.shopping{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.shopping p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.bx{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+/* /////////////////                             navbar  end                    ////////////////////// */
