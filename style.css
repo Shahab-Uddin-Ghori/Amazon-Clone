@@ -18,6 +18,7 @@
   --text2-colo: #878989;
   --link-color: #3990a0;
 }
+
 /* /////////////////                             navbar                       ////////////////////// */
 .navbar {
   display: flex;
@@ -202,7 +203,77 @@ a {
 .links-li ul li:hover{
   transform: scale(.96);
 }
+/* ///////////////////////////////////// main sec //////////////////////////////////////////////// */
 
+/* //////////////// gaming Sec /////////////////////// */
+.gaming-sec-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(./img/top-img.jpg);
+  background-size: cover;
+  width: 100vw  ;
+  height: 80.8svh;
+}
+/*  Gaming cards */
+.gaming-cards{
+  padding: 1rem;
+  margin-top: 15rem;
+  width: 20vw;
+  height: 21rem;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: .5s ease-in-out;
+}
+.gaming-cards-img{
+  width: 18vw;
+  height: 13rem;
+  overflow: hidden;
+}
+.gaming-cards-img img{
+  transition: 1s ease;
+  width: 18vw;
+}.gaming-cards:hover .gaming-cards-img img{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.gaming-cards:hover{
+  box-shadow: 0 1rem 1rem var(--header--bg-color);
+  transform: rotate(3deg);
+  position: relative;
+  bottom: 5rem;
+}
+.gaming-card-content {
+  margin-top: .5rem;
+  display: flex;
+  gap: .1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gaming-card-content a h2{
+  color: var(--text-color);
+  text-align: center;
+  background-color: var(--header--bg-color);
+  /* width: 70%; */
+  border-radius: 24px;
+  padding: .5rem 1rem;
+}
+.gaming-card-content ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: .2rem;
+}
+.gaming-card-content ul li{
+  color: var(--text2-colo);
+  font-weight: 400;
+  line-height: 24px;
+
+}
+/*  Gaming cards */
+/* //////////////// gaming Sec E///////////////////// */
 
 
 @media screen and (max-width: 1280px) {
@@ -295,6 +366,9 @@ a {
 }
 .links-li ul li a{
   font-size: 78%;
+}
+.gaming-sec-container {
+  height: 20svh; /* Adjust height for mobile devices */
 }
 }
 @media screen and (max-width: 450px ){
