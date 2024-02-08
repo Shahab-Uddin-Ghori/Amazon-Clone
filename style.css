@@ -7,6 +7,9 @@
   font-family: "Amazon Ember";
   text-decoration: none;
   outline: none;
+  color: var(--text-color);
+  list-style: none;
+  letter-spacing: .6px;
 }
 :root {
   --header--bg-color: #131921;
@@ -169,6 +172,39 @@ a {
   display: none;
 }
 /* /////////////////                             navbar  end                    ////////////////////// */
+/* //nav sec 2 /// */
+.nav-sec-2{
+  background-color: #232F3E;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.menuicon2{
+  display: flex;
+  font-weight: 600;
+}
+.menuicon2 i{
+  font-size: 2rem;
+}
+
+.links-li ul{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 1vw;
+  text-align: center;
+}
+.links-li ul li a{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.links-li ul li:hover{
+  transform: scale(.96);
+}
+
+
+
 @media screen and (max-width: 1280px) {
 .location,
 .account-list,
@@ -245,9 +281,23 @@ a {
   .menubar i{
     font-size: 2.5rem;
   }
-   
+  .nav-sec-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-@media screen and (max-width: 450px) {
+.menuicon2{
+  display: none;
+}
+.links-li ul{
+  justify-content: center;
+}
+.links-li ul li a{
+  font-size: 78%;
+}
+}
+@media screen and (max-width: 450px ){
 
   .logo img {
     width: 5rem;
@@ -267,5 +317,7 @@ a {
   .menubar i{
     font-size: 2.5rem;
   }
-
+  .links-li ul{
+    flex-wrap: wrap;
+  }
   }
