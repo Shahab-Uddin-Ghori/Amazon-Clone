@@ -18,9 +18,6 @@
   --text2-colo: #878989;
   --link-color: #3990a0;
 }
-body{
-  background-color: #4E01C1;
-}
 
 /* /////////////////                             navbar                       ////////////////////// */
 .navbar {
@@ -209,6 +206,18 @@ a {
 /* ///////////////////////////////////// main sec //////////////////////////////////////////////// */
 
 /* //////////////// gaming Sec /////////////////////// */
+.sec1{
+  padding-bottom: 1rem;
+  background: hsla(287, 75%, 35%, 1);
+
+  background: linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
+  
+  background: -moz-linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
+  
+  background: -webkit-linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7E169B", endColorstr="#4E01C1", GradientType=1 );
+}
 .gaming-sec-container{
   display: flex;
   flex-wrap: wrap;
@@ -216,13 +225,20 @@ a {
   gap: 1rem;
   background-image: url(./img/top-img.jpg);
   background-size: cover;
-  width: 100vw;
-  max-height: 80.8svh;
+  width: 100%;
+  max-height: 100vh;
   }
+
 /*  Gaming cards */
+.card-container{
+  margin-top: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
 .gaming-cards{
   padding: 1rem;
-  margin-top: 12rem;
   width: 18rem;
   height: 23rem;
   background-color: #fff;
@@ -270,10 +286,35 @@ a {
   line-height: 24px;
 }
 /*  Gaming cards */
-/* //////////////// gaming Sec E///////////////////// */
+/* //////////////// gaming Sec End///////////////////// */
+
+/* ///////////////////////////////sec 2 kitchen item ////////////////////// */
+.sec2{
+  background: hsla(345, 95%, 85%, 1);
+
+  background: linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
+  
+  background: -moz-linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
+  
+  background: -webkit-linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDB6C8", endColorstr="#FEEECA", GradientType=1 );
+height: 80.8vh;
+}
+.kitchen-sec-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(./img/kitchen-items.jpg);
+  background-size: cover;
+  width: 100%;
+  max-height: 100vh;
+}
+/* ///////////////////////////////sec 2 kitchen item ////////////////////// */
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width:1280px) {
 .location,
 .account-list,
 .returns-and-orders,
@@ -294,7 +335,27 @@ a {
   width: 12vw;
 }
 .gaming-sec-container{
+  width: 100%;
   max-height: 30vh;
+  }
+  .kitchen-sec-container{
+    width: 100%;
+    max-height: 30vh;
+  }
+  .sec1{
+    background: hsla(264, 99%, 38%, 1);
+  
+    background: linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
+    
+    background: -moz-linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E01C1", endColorstr="#7E169B", GradientType=1 );
+    height: 62rem;
+  }
+  .sec2{
+    height: 62rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -314,9 +375,25 @@ a {
   font-size: 2.5rem;
 }
 .gaming-sec-container{
+  width: 100%;
   max-height: 20vh;
   }
+  .kitchen-sec-container{
+    width: 100%;
+    max-height: 20vh;
+  }
+  .sec1{
+    height: 60rem;
+  }
+  .sec2{
+    height: 60rem;
+  }
+.card-container{
+  margin-top: 8rem;
 }
+
+}
+
 @media screen and (max-width: 650px) {
   .navbar {
     justify-content: space-between; 
@@ -371,11 +448,15 @@ a {
 }
 /* cards */
 .gaming-sec-container {
-  max-height: 15svh; /* Adjust height for mobile devices */
+  width: 100%;
+  max-height: 15svh;
+}
+.kitchen-sec-container{
+  width: 100%;
+  max-height: 15vh;
 }
 /* //////cards  */
 .gaming-cards{
-  margin-top: 5rem;
   width: 12rem;
   height: 20rem;
 }
@@ -399,6 +480,16 @@ a {
 }
 .gaming-card-content p{
   font-size: 12px;
+  line-height: 20px;
+}
+.card-container{
+  margin-top: 6rem;
+}
+.sec1{
+  height: 50rem;
+}
+.sec2{
+  height: 50rem;
 }
 }
 @media screen and (max-width: 450px ){
@@ -426,10 +517,13 @@ a {
   }
   /* cards */
   .gaming-sec-container{
-    max-height: 10svh;
+    max-height: 10vh;
+    }
+    .kitchen-sec-container{
+      width: 100%;
+      max-height: 10vh;
     }
     .gaming-cards{
-      margin-top: 5rem;
       width: 15rem;
       height: 20rem;
     }
@@ -453,5 +547,14 @@ a {
     }
     .gaming-card-content p{
       font-size: 12px;
+    }
+    .sec1{
+      height: 92rem;
+    }
+    .sec2{
+      height: 92rem;
+    }
+    .card-container{
+      margin-top: 4rem;
     }
   }
