@@ -9,7 +9,7 @@
   outline: none;
   color: var(--text-color);
   list-style: none;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
 }
 :root {
   --header--bg-color: #131921;
@@ -22,11 +22,11 @@
 /* /////////////////                             navbar                       ////////////////////// */
 .navbar {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--header--bg-color);
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .boder {
@@ -110,8 +110,8 @@
   background-color: #f3a847;
   border-radius: 0 4px 4px 0;
 }
-.search-icon:hover{
-    cursor: pointer;
+.search-icon:hover {
+  cursor: pointer;
 }
 .search-icon > a > i {
   color: var(--heading--text-color);
@@ -120,8 +120,8 @@
 .sign-in {
   height: 3rem;
 }
-.sign-in:hover{
-    cursor: pointer;
+.sign-in:hover {
+  cursor: pointer;
 }
 .sign-in > p,
 a {
@@ -143,82 +143,94 @@ a {
   background-color: transparent;
   color: var(--text-color);
 }
-.returns-and-orders{
-    height: 3rem;
+.returns-and-orders {
+  height: 3rem;
 }
 .returns-and-orders > a {
-    font-size: 1rem;
-    color: var(--text-color);
-    font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
-.returns-and-orders .returns{
-    font-size: .8rem;
-    font-weight: 500;
+.returns-and-orders .returns {
+  font-size: 0.8rem;
+  font-weight: 500;
 }
-.shopping{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+.shopping {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
-.shopping p{
-    font-size: 1rem;
-    color: var(--text-color);
-    font-weight: 600;
+.shopping p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
-.bx{
-    font-size: 2rem;
-    color: var(--text-color);
+.bx {
+  font-size: 2rem;
+  color: var(--text-color);
 }
-.menubar{
+.menubar {
   display: none;
 }
 /* /////////////////                             navbar  end                    ////////////////////// */
 /* //nav sec 2 /// */
-.nav-sec-2{
-  background-color: #232F3E;
+.nav-sec-2 {
+  background-color: #232f3e;
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.menuicon2{
+.menuicon2 {
   display: flex;
   font-weight: 600;
 }
-.menuicon2 i{
+.menuicon2 i {
   font-size: 2rem;
 }
 
-.links-li ul{
+.links-li ul {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   gap: 1vw;
   text-align: center;
 }
-.links-li ul li a{
+.links-li ul li a {
   font-size: 1rem;
   font-weight: 500;
 }
-.links-li ul li:hover{
-  transform: scale(.96);
+.links-li ul li:hover {
+  transform: scale(0.96);
 }
 /* ///////////////////////////////////// main sec //////////////////////////////////////////////// */
 
 /* //////////////// gaming Sec /////////////////////// */
-.sec1{
+.sec1 {
   padding-bottom: 1rem;
   background: hsla(287, 75%, 35%, 1);
 
-  background: linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
-  
-  background: -moz-linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
-  
-  background: -webkit-linear-gradient(270deg, hsla(287, 75%, 35%, 1) 0%, hsla(264, 99%, 38%, 1) 100%);
-  
+  background: linear-gradient(
+    270deg,
+    hsla(287, 75%, 35%, 1) 0%,
+    hsla(264, 99%, 38%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(287, 75%, 35%, 1) 0%,
+    hsla(264, 99%, 38%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(287, 75%, 35%, 1) 0%,
+    hsla(264, 99%, 38%, 1) 100%
+  );
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7E169B", endColorstr="#4E01C1", GradientType=1 );
 }
-.gaming-sec-container{
+.gaming-sec-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -227,60 +239,61 @@ a {
   background-size: cover;
   width: 100%;
   max-height: 100vh;
-  }
+}
 
 /*  Gaming cards */
-.card-container{
+.card-container {
   margin-top: 12rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-.gaming-cards{
+.gaming-cards {
   padding: 1rem;
   width: 18rem;
   height: 23rem;
   background-color: #fff;
   border-radius: 4px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.gaming-cards-img{
+.gaming-cards-img {
   width: 16rem;
   height: 13rem;
   overflow: hidden;
 }
-.gaming-cards-img img{
+.gaming-cards-img img {
   transition: 1s ease;
   width: 16rem;
-}.gaming-cards:hover .gaming-cards-img img{
+}
+.gaming-cards:hover .gaming-cards-img img {
   transform: scale(1.1);
   cursor: pointer;
 }
-.gaming-cards:hover{
-  box-shadow: 0 .5rem 1rem var(--header--bg-color);
+.gaming-cards:hover {
+  box-shadow: 0 0.5rem 1rem var(--header--bg-color);
   transform: rotate(1deg);
   position: relative;
   bottom: 5rem;
 }
 .gaming-card-content {
   margin-top: 1rem;
-  display: flex; 
-  gap: .3rem;
+  display: flex;
+  gap: 0.3rem;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: fit-content;
 }
-.gaming-card-content a h2{
+.gaming-card-content a h2 {
   color: var(--text-color);
   text-align: center;
   background-color: var(--header--bg-color);
   width: 15rem;
   border-radius: 24px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
-.gaming-card-content p{
+.gaming-card-content p {
   color: var(--text2-colo);
   font-weight: 400;
   line-height: 24px;
@@ -289,19 +302,31 @@ a {
 /* //////////////// gaming Sec End///////////////////// */
 
 /* ///////////////////////////////sec 2 kitchen item ////////////////////// */
-.sec2{
+.sec2 {
   background: hsla(345, 95%, 85%, 1);
 
-  background: linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
-  
-  background: -moz-linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
-  
-  background: -webkit-linear-gradient(180deg, hsla(345, 95%, 85%, 1) 11%, hsla(42, 96%, 89%, 1) 89%);
-  
+  background: linear-gradient(
+    180deg,
+    hsla(345, 95%, 85%, 1) 11%,
+    hsla(42, 96%, 89%, 1) 89%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(345, 95%, 85%, 1) 11%,
+    hsla(42, 96%, 89%, 1) 89%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(345, 95%, 85%, 1) 11%,
+    hsla(42, 96%, 89%, 1) 89%
+  );
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDB6C8", endColorstr="#FEEECA", GradientType=1 );
-height: 80.8vh;
+  height: 80.8vh;
 }
-.kitchen-sec-container{
+.kitchen-sec-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -312,91 +337,122 @@ height: 80.8vh;
   max-height: 100vh;
 }
 /* ///////////////////////////////sec 2 kitchen item ////////////////////// */
+/* ///////////////////////////////// sec 3 books ///////////////////////////// */
+.sec3 {
+  background: hsla(116, 40%, 80%, 1);
 
-
-@media screen and (max-width:1280px) {
-.location,
-.account-list,
-.returns-and-orders,
-.shopping,
-.sign-in
-
-{
-  display: none;
+  background: linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
+  
+  background: -moz-linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
+  
+  background: -webkit-linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BAE0B7", endColorstr="#EECCB7", GradientType=1 );
+  height: 80.8vh;
 }
-.menubar{
-  display: inline-block;
-}
-.menubar i{
-  font-size: 3rem;
-}
-
-.logo img {
-  width: 12vw;
-}
-.gaming-sec-container{
+.books-sec-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(./img/books-sec3.jpg);
+  background-size: cover;
   width: 100%;
-  max-height: 30vh;
+  max-height: 100vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .location,
+  .account-list,
+  .returns-and-orders,
+  .shopping,
+  .sign-in {
+    display: none;
   }
-  .kitchen-sec-container{
+  .menubar {
+    display: inline-block;
+  }
+  .menubar i {
+    font-size: 3rem;
+  }
+
+  .logo img {
+    width: 12vw;
+  }
+  .gaming-cards:hover {
+    bottom: 1rem;
+  }
+  .gaming-sec-container ,
+  .kitchen-sec-container,
+  .books-sec-container
+  {
     width: 100%;
     max-height: 30vh;
   }
-  .sec1{
+  .sec1 {
     background: hsla(264, 99%, 38%, 1);
-  
-    background: linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
-    
-    background: -moz-linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
-    
-    background: -webkit-linear-gradient(270deg, hsla(264, 99%, 38%, 1) 49%, hsla(287, 75%, 35%, 1) 100%);
-    
+
+    background: linear-gradient(
+      270deg,
+      hsla(264, 99%, 38%, 1) 49%,
+      hsla(287, 75%, 35%, 1) 100%
+    );
+
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(264, 99%, 38%, 1) 49%,
+      hsla(287, 75%, 35%, 1) 100%
+    );
+
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(264, 99%, 38%, 1) 49%,
+      hsla(287, 75%, 35%, 1) 100%
+    );
+
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E01C1", endColorstr="#7E169B", GradientType=1 );
-    height: 62rem;
   }
-  .sec2{
+  .sec1, .sec2, .sec3 {
     height: 62rem;
-  }
+  } 
 }
 @media screen and (max-width: 900px) {
   .logo img {
     width: 15vw;
   }
-.nav-search-item-option select {
-  width: 8vw;
-}
-.search-input input {
-  width: 50vw;
-}
-.search-icon {
-  width: 7vw;
-}
-.menubar i{
-  font-size: 2.5rem;
-}
-.gaming-sec-container{
-  width: 100%;
-  max-height: 20vh;
+  .nav-search-item-option select {
+    width: 8vw;
   }
-  .kitchen-sec-container{
+  .search-input input {
+    width: 50vw;
+  }
+  .search-icon {
+    width: 7vw;
+  }
+  .menubar i {
+    font-size: 2.5rem;
+  }
+  .gaming-sec-container ,
+  .kitchen-sec-container,
+  .books-sec-container
+  {
     width: 100%;
     max-height: 20vh;
   }
-  .sec1{
+  .sec1, .sec2, .sec3 {
     height: 60rem;
+  }  
+  .card-container {
+    margin-top: 8rem;
   }
-  .sec2{
-    height: 60rem;
+  .gaming-cards:hover {
+    bottom: 1rem;
   }
-.card-container{
-  margin-top: 8rem;
-}
-
 }
 
 @media screen and (max-width: 650px) {
   .navbar {
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -412,13 +468,13 @@ height: 80.8vh;
     text-align: right;
     margin-right: 1rem;
   }
-  .nav-search-container{
+  .nav-search-container {
     order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-  } 
+  }
   .nav-search-item-option select {
     width: 12vw;
   }
@@ -428,76 +484,72 @@ height: 80.8vh;
   .search-icon {
     width: 12vw;
   }
-  .menubar i{
+  .menubar i {
     font-size: 2.5rem;
   }
-  .nav-sec-2{
+  .nav-sec-2 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-.menuicon2{
-  display: none;
-}
-.links-li ul{
-  justify-content: center;
-}
-.links-li ul li a{
-  font-size: 78%;
-}
-/* cards */
-.gaming-sec-container {
-  width: 100%;
-  max-height: 15svh;
-}
-.kitchen-sec-container{
-  width: 100%;
-  max-height: 15vh;
-}
-/* //////cards  */
-.gaming-cards{
-  width: 12rem;
-  height: 20rem;
-}
-.gaming-cards:hover{
-  bottom: 1rem;
-}
-.gaming-cards-img{
-  width: 10rem;
-  overflow: hidden;
-  height: 10rem;
-}
-.gaming-cards-img img{
-  transition: 1s ease;
-  width: 10rem;
-  height: 10rem;
-}
+  }
+  .menuicon2 {
+    display: none;
+  }
+  .links-li ul {
+    justify-content: center;
+  }
+  .links-li ul li a {
+    font-size: 78%;
+  }
+  /* cards */
+  .gaming-sec-container ,
+  .kitchen-sec-container,
+  .books-sec-container
+  {
+    width: 100%;
+    max-height: 20vh;
+  }
+  /* //////cards  */
+  .gaming-cards {
+    width: 12rem;
+    height: 20rem;
+  }
+  .gaming-cards:hover {
+    bottom: 1rem;
+  }
+  .gaming-cards-img {
+    width: 10rem;
+    overflow: hidden;
+    height: 10rem;
+  }
+  .gaming-cards-img img {
+    transition: 1s ease;
+    width: 10rem;
+    height: 10rem;
+  }
 
-.gaming-card-content h2{
-  font-size: 1rem;
-  width: 10rem !important;
+  .gaming-card-content h2 {
+    font-size: 1rem;
+    width: 10rem !important;
+  }
+  .gaming-card-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .card-container {
+    margin-top: 6rem;
+  }
+  .sec1, .sec2, .sec3 {
+    height: 50rem;
+  }
+  
 }
-.gaming-card-content p{
-  font-size: 12px;
-  line-height: 20px;
-}
-.card-container{
-  margin-top: 6rem;
-}
-.sec1{
-  height: 50rem;
-}
-.sec2{
-  height: 50rem;
-}
-}
-@media screen and (max-width: 450px ){
-
+@media screen and (max-width: 450px) {
   .logo img {
     width: 5rem;
   }
-  .nav-search-item-option{
+  .nav-search-item-option {
     min-width: 15vw;
   }
   .nav-search-item-option select {
@@ -509,52 +561,49 @@ height: 80.8vh;
   .search-icon {
     width: 15vw;
   }
-  .menubar i{
+  .menubar i {
     font-size: 2.5rem;
   }
-  .links-li ul{
+  .links-li ul {
     flex-wrap: wrap;
   }
   /* cards */
-  .gaming-sec-container{
+  .gaming-sec-container ,
+  .kitchen-sec-container,
+  .books-sec-container
+  {
+    width: 100%;
     max-height: 10vh;
-    }
-    .kitchen-sec-container{
-      width: 100%;
-      max-height: 10vh;
-    }
-    .gaming-cards{
-      width: 15rem;
-      height: 20rem;
-    }
-    .gaming-cards:hover{
-      bottom: 1rem;
-    }
-    .gaming-cards-img{
-      width: 13rem;
-      overflow: hidden;
-      height: 10rem;
-    }
-    .gaming-cards-img img{
-      transition: 1s ease;
-      width: 13rem;
-      height: 10rem;
-    }
-    
-    .gaming-card-content h2{
-      font-size: 1rem;
-      width: 13rem !important;
-    }
-    .gaming-card-content p{
-      font-size: 12px;
-    }
-    .sec1{
-      height: 92rem;
-    }
-    .sec2{
-      height: 92rem;
-    }
-    .card-container{
-      margin-top: 4rem;
-    }
   }
+  .gaming-cards {
+    width: 15rem;
+    height: 20rem;
+  }
+  .gaming-cards:hover {
+    bottom: 1rem;
+  }
+  .gaming-cards-img {
+    width: 13rem;
+    overflow: hidden;
+    height: 10rem;
+  }
+  .gaming-cards-img img {
+    transition: 1s ease;
+    width: 13rem;
+    height: 10rem;
+  }
+
+  .gaming-card-content h2 {
+    font-size: 1rem;
+    width: 13rem !important;
+  }
+  .gaming-card-content p {
+    font-size: 12px;
+  }
+  .sec1, .sec2, .sec3 {
+    height: 92rem;
+  }
+  .card-container {
+    margin-top: 4rem;
+  }
+}
