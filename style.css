@@ -18,6 +18,9 @@
   --text2-colo: #878989;
   --link-color: #3990a0;
 }
+body{
+  background-color: #E3E6E6;
+}
 
 /* /////////////////                             navbar                       ////////////////////// */
 .navbar {
@@ -360,7 +363,54 @@ a {
   width: 100%;
   max-height: 100vh;
 }
+/* ///////////////// sec 4 //////////////// */
+.sec4{
+  width: 100%;
+  margin-top: 1rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.sec4-container{
+  padding: 1rem;
+  width: 90%;
+  background-color: var(--text-color);
+}
+.sec4-container h3{
+  color: var(--heading--text-color);
+  width: 100%;
+  font-size: 3vmin;
+}
+.sec-img-link img{
+  margin-top: .5rem;
+  width: 15%;
+  transition: .3s ease;
+}
+.sec-img-link img:hover{
+  transform: scale(1.1);
+}
+.sec-img-link a:nth-of-type(3) img {
+  width: 8%;
+}.sec-img-link a:nth-of-type(4) img {
+  width: 8%;
+}
+.sec-img-link a:nth-of-type(6) img {
+  width: 4%;
+}
+.sec-img-link a:nth-of-type(7) img {
+  width: 12%;
+}
+#img-15{
+  width: 20%;
+}
+#img-16{
+  width: 5%;
+}
+#img-17{
+  width: 7%;
+}
 
+/* /////////////////////////////////////////////////////// MEDIA SCREEN //////////////////////////// */
 @media screen and (max-width: 1280px) {
   .location,
   .account-list,
@@ -382,7 +432,7 @@ a {
   .gaming-cards:hover {
     bottom: 1rem;
   }
-  .gaming-sec-container ,
+  .gamingsec-container ,
   .kitchen-sec-container,
   .books-sec-container
   {
