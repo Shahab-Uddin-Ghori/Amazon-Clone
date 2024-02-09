@@ -242,7 +242,7 @@ a {
   cursor: pointer;
 }
 .gaming-cards:hover{
-  box-shadow: 0 1rem 1rem var(--header--bg-color);
+  box-shadow: 0 .5rem 1rem var(--header--bg-color);
   transform: rotate(1deg);
   position: relative;
   bottom: 5rem;
