@@ -18,6 +18,9 @@
   --text2-colo: #878989;
   --link-color: #3990a0;
 }
+body{
+  background-color: #4E01C1;
+}
 
 /* /////////////////                             navbar                       ////////////////////// */
 .navbar {
@@ -209,68 +212,62 @@ a {
 .gaming-sec-container{
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   background-image: url(./img/top-img.jpg);
   background-size: cover;
-  width: 100vw  ;
-  height: 80.8svh;
-}
+  width: 100vw;
+  max-height: 80.8svh;
+  }
 /*  Gaming cards */
 .gaming-cards{
   padding: 1rem;
-  margin-top: 15rem;
-  width: 20vw;
-  height: 21rem;
+  margin-top: 12rem;
+  width: 18rem;
+  height: 23rem;
   background-color: #fff;
   border-radius: 4px;
   transition: .5s ease-in-out;
 }
 .gaming-cards-img{
-  width: 18vw;
+  width: 16rem;
   height: 13rem;
   overflow: hidden;
 }
 .gaming-cards-img img{
   transition: 1s ease;
-  width: 18vw;
+  width: 16rem;
 }.gaming-cards:hover .gaming-cards-img img{
   transform: scale(1.1);
   cursor: pointer;
 }
 .gaming-cards:hover{
   box-shadow: 0 1rem 1rem var(--header--bg-color);
-  transform: rotate(3deg);
+  transform: rotate(1deg);
   position: relative;
   bottom: 5rem;
 }
 .gaming-card-content {
-  margin-top: .5rem;
-  display: flex;
-  gap: .1rem;
-  justify-content: center;
+  margin-top: 1rem;
+  display: flex; 
+  gap: .3rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
+  max-width: fit-content;
 }
 .gaming-card-content a h2{
   color: var(--text-color);
   text-align: center;
   background-color: var(--header--bg-color);
-  /* width: 70%; */
+  width: 15rem;
   border-radius: 24px;
   padding: .5rem 1rem;
 }
-.gaming-card-content ul{
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: .2rem;
-}
-.gaming-card-content ul li{
+.gaming-card-content p{
   color: var(--text2-colo);
   font-weight: 400;
   line-height: 24px;
-
 }
 /*  Gaming cards */
 /* //////////////// gaming Sec E///////////////////// */
@@ -296,6 +293,9 @@ a {
 .logo img {
   width: 12vw;
 }
+.gaming-sec-container{
+  max-height: 30vh;
+  }
 }
 @media screen and (max-width: 900px) {
   .logo img {
@@ -313,7 +313,9 @@ a {
 .menubar i{
   font-size: 2.5rem;
 }
-
+.gaming-sec-container{
+  max-height: 20vh;
+  }
 }
 @media screen and (max-width: 650px) {
   .navbar {
@@ -367,8 +369,36 @@ a {
 .links-li ul li a{
   font-size: 78%;
 }
+/* cards */
 .gaming-sec-container {
-  height: 20svh; /* Adjust height for mobile devices */
+  max-height: 15svh; /* Adjust height for mobile devices */
+}
+/* //////cards  */
+.gaming-cards{
+  margin-top: 5rem;
+  width: 12rem;
+  height: 20rem;
+}
+.gaming-cards:hover{
+  bottom: 1rem;
+}
+.gaming-cards-img{
+  width: 10rem;
+  overflow: hidden;
+  height: 10rem;
+}
+.gaming-cards-img img{
+  transition: 1s ease;
+  width: 10rem;
+  height: 10rem;
+}
+
+.gaming-card-content h2{
+  font-size: 1rem;
+  width: 10rem !important;
+}
+.gaming-card-content p{
+  font-size: 12px;
 }
 }
 @media screen and (max-width: 450px ){
@@ -394,4 +424,34 @@ a {
   .links-li ul{
     flex-wrap: wrap;
   }
+  /* cards */
+  .gaming-sec-container{
+    max-height: 10svh;
+    }
+    .gaming-cards{
+      margin-top: 5rem;
+      width: 15rem;
+      height: 20rem;
+    }
+    .gaming-cards:hover{
+      bottom: 1rem;
+    }
+    .gaming-cards-img{
+      width: 13rem;
+      overflow: hidden;
+      height: 10rem;
+    }
+    .gaming-cards-img img{
+      transition: 1s ease;
+      width: 13rem;
+      height: 10rem;
+    }
+    
+    .gaming-card-content h2{
+      font-size: 1rem;
+      width: 13rem !important;
+    }
+    .gaming-card-content p{
+      font-size: 12px;
+    }
   }
