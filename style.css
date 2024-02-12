@@ -18,8 +18,8 @@
   --text2-colo: #878989;
   --link-color: #3990a0;
 }
-body{
-  background-color: #E3E6E6;
+body {
+  background-color: #e3e6e6;
 }
 
 /* /////////////////                             navbar                       ////////////////////// */
@@ -344,12 +344,24 @@ a {
 .sec3 {
   background: hsla(116, 40%, 80%, 1);
 
-  background: linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
-  
-  background: -moz-linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
-  
-  background: -webkit-linear-gradient(0deg, hsla(116, 40%, 80%, 1) 19%, hsla(23, 62%, 83%, 1) 100%);
-  
+  background: linear-gradient(
+    0deg,
+    hsla(116, 40%, 80%, 1) 19%,
+    hsla(23, 62%, 83%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(116, 40%, 80%, 1) 19%,
+    hsla(23, 62%, 83%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(116, 40%, 80%, 1) 19%,
+    hsla(23, 62%, 83%, 1) 100%
+  );
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BAE0B7", endColorstr="#EECCB7", GradientType=1 );
   height: 80.8vh;
 }
@@ -364,34 +376,35 @@ a {
   max-height: 100vh;
 }
 /* ///////////////// sec 4 //////////////// */
-.sec4{
+.sec4 {
   width: 100%;
   margin-top: 1rem;
   background-color: transparent;
   display: flex;
   justify-content: center;
 }
-.sec4-container{
+.sec4-container {
   padding: 1rem;
   width: 90%;
   background-color: var(--text-color);
 }
-.sec4-container h3{
+.sec4-container h3 {
   color: var(--heading--text-color);
   width: 100%;
   font-size: 3vmin;
 }
-.sec-img-link img{
-  margin-top: .5rem;
+.sec-img-link img {
+  margin-top: 0.5rem;
   width: 15%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.sec-img-link img:hover{
+.sec-img-link img:hover {
   transform: scale(1.1);
 }
 .sec-img-link a:nth-of-type(3) img {
   width: 8%;
-}.sec-img-link a:nth-of-type(4) img {
+}
+.sec-img-link a:nth-of-type(4) img {
   width: 8%;
 }
 .sec-img-link a:nth-of-type(6) img {
@@ -400,15 +413,48 @@ a {
 .sec-img-link a:nth-of-type(7) img {
   width: 12%;
 }
-#img-15{
+#img-15 {
   width: 20%;
 }
-#img-16{
+#img-16 {
   width: 5%;
 }
-#img-17{
+#img-17 {
   width: 7%;
 }
+/* /////////////////////// footer /////////////////////// */
+/* sec 1 */
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #485769;
+}
+.back-to-top span {
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+.footer-larger-part {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: first baseline;
+  background-color: #232F3E;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  }
+.li-heading{
+font-size: 1rem;
+font-weight: 600;
+margin-bottom: .5rem;
+}
+.footer-larger-part li{
+  line-height: 24px;
+}
+/* /////////////////////// footer /////////////////////// */
 
 /* /////////////////////////////////////////////////////// MEDIA SCREEN //////////////////////////// */
 @media screen and (max-width: 1280px) {
@@ -432,10 +478,9 @@ a {
   .gaming-cards:hover {
     bottom: 1rem;
   }
-  .gamingsec-container ,
+  .gamingsec-container,
   .kitchen-sec-container,
-  .books-sec-container
-  {
+  .books-sec-container {
     width: 100%;
     max-height: 30vh;
   }
@@ -462,9 +507,11 @@ a {
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E01C1", endColorstr="#7E169B", GradientType=1 );
   }
-  .sec1, .sec2, .sec3 {
+  .sec1,
+  .sec2,
+  .sec3 {
     height: 62rem;
-  } 
+  }
 }
 @media screen and (max-width: 900px) {
   .logo img {
@@ -482,16 +529,17 @@ a {
   .menubar i {
     font-size: 2.5rem;
   }
-  .gaming-sec-container ,
+  .gaming-sec-container,
   .kitchen-sec-container,
-  .books-sec-container
-  {
+  .books-sec-container {
     width: 100%;
     max-height: 20vh;
   }
-  .sec1, .sec2, .sec3 {
+  .sec1,
+  .sec2,
+  .sec3 {
     height: 60rem;
-  }  
+  }
   .card-container {
     margin-top: 8rem;
   }
@@ -553,10 +601,9 @@ a {
     font-size: 78%;
   }
   /* cards */
-  .gaming-sec-container ,
+  .gaming-sec-container,
   .kitchen-sec-container,
-  .books-sec-container
-  {
+  .books-sec-container {
     width: 100%;
     max-height: 20vh;
   }
@@ -590,10 +637,11 @@ a {
   .card-container {
     margin-top: 6rem;
   }
-  .sec1, .sec2, .sec3 {
+  .sec1,
+  .sec2,
+  .sec3 {
     height: 50rem;
   }
-  
 }
 @media screen and (max-width: 450px) {
   .logo img {
@@ -618,10 +666,9 @@ a {
     flex-wrap: wrap;
   }
   /* cards */
-  .gaming-sec-container ,
+  .gaming-sec-container,
   .kitchen-sec-container,
-  .books-sec-container
-  {
+  .books-sec-container {
     width: 100%;
     max-height: 10vh;
   }
@@ -650,7 +697,9 @@ a {
   .gaming-card-content p {
     font-size: 12px;
   }
-  .sec1, .sec2, .sec3 {
+  .sec1,
+  .sec2,
+  .sec3 {
     height: 92rem;
   }
   .card-container {
